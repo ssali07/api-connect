@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Anta&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap");
+
+
+/* ************************Body********************* */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* **************************Navbar*********************** */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.logo {
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 25px;
+    color: black;
+}
+
+.logo span{
+    color: royalblue;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0px 15px;
+}
+
+nav ul li a{
+    color: black;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+    color: royalblue;
+    transition: all ease-in-out 0.2s;
+}
+
+.heading{
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 500;
+    margin: 30px 10px;
+    text-align: center;
+}
+
+.heading span{
+    color: royalblue;
+}
+
+/* ***********************Main Container***************** */
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container a div {
+    width: 400px;
+    margin: 30px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.400);
+    border-radius: 5px;
+}
+
+.container a div img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.container a div h2{
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+}
+
+.container a div p{
+    color: rgba(0, 0, 0, 0.9);
+    font-family: "Noto Sans", sans-serif;
+}
+
+.container a:hover div h2{
+    text-decoration: underline;
+    color: royalblue;
+}
+
+.container a div img:hover {
+    opacity: 0.8;
+    transition: all ease-in-out 0.5s;
+}
+
+.container a div:hover {
+    transition: all ease-in-out 0.4s;
+    transform: scale(1.03);
+}
+
+.container a div h2,
+p {
+    padding: 10px;
+}
+
+
+/***********************Footer***********************/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    padding: 20px 0px;
+    box-shadow: 0px 0px 5px grey;
+}
+
+footer h3, h4{
+    font-family: "Noto Sans", sans-serif;
+    color: royalblue;
+}
+
+footer p{
+    color: rgba(0, 0, 0, 0.9);
+    font-family: "Noto Sans", sans-serif;
+    margin: 5px 0px;
+    padding: 0;
+}
+
+footer ul li a{
+    color: rgba(0, 0, 0, 0.9);
+    font-family: "Noto Sans", sans-serif;
+}
+
+footer ul li{
+    margin: 5px 0px;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+/******************************Modal**********************/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal h2{
+    font-family: "Noto Sans", sans-serif;
+}
+
+.modal p{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.close1 {
+    color: #aaa;
+    float: right;
+    font-size: 60px;
+}
+
+.close1:hover,
+.close1:focus {
+    color: white;
+    transition: all ease-in-out .3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close2 {
+    color: #aaa;
+    float: right;
+    font-size: 60px;
+}
+
+.close2:hover,
+.close2:focus {
+    color: white;
+    transition: all ease-in-out .3s;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 500px;
+}
+
+.form-wrapper h2 {
+    margin: 0px 5px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 2rem;
+}
